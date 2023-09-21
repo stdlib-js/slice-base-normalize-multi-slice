@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2023 The Stdlib Authors.
@@ -16,17 +16,43 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { MultiSlice } from '@stdlib/types/slice';
+import { Collection } from '@stdlib/types/array';
 
 /**
-* Normalize a MultiSlice object.
+* Interface describing an error object.
+*/
+interface ErrorObject {
+	/**
+	* Error code.
+	*/
+	code: 'ERR_SLICE_OUT_OF_BOUNDS';
+}
+
+/**
+* Normalization result.
+*/
+type SliceResult = MultiSlice | ErrorObject;
+
+/**
+* Returns a normalized MultiSlice object.
 *
-* @module @stdlib/slice-base-normalize-multi-slice
+* ## Notes
+*
+* -   If `strict` is `true`, the function returns an error object when an input slice exceeds index bounds.
+*
+* @param slice - input slice
+* @param shape - maximum allowed slice shape
+* @param strict - boolean indicating whether to enforce strict bounds checking
+* @returns MultiSlice object (or an error object)
 *
 * @example
-* var Slice = require( '@stdlib/slice-ctor' );
-* var MultiSlice = require( '@stdlib/slice-multi' );
-* var normalizeMultiSlice = require( '@stdlib/slice-base-normalize-multi-slice' );
+* var Slice = require( `@stdlib/slice/ctor` );
+* var MultiSlice = require( `@stdlib/slice/multi` );
 *
 * var shape = [ 10, 10, 10 ];
 *
@@ -73,12 +99,9 @@
 * step = v.step;
 * // returns 1
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function normalizeMultiSlice( slice: MultiSlice, shape: Collection<number>, strict: boolean ): SliceResult;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = normalizeMultiSlice;
