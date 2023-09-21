@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/slice-base-normalize-multi-slice",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Normalize a MultiSlice object.",
   "license": "Apache-2.0",
   "author": {
@@ -37,7 +37,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/slice-base-normalize-slice": "github:stdlib-js/slice-base-normalize-slice#main",
+    "@stdlib/slice-base-normalize-slice": "^0.0.1",
     "@stdlib/slice-ctor": "github:stdlib-js/slice-ctor#main",
     "@stdlib/slice-multi": "github:stdlib-js/slice-multi#main",
     "@stdlib/types": "^0.0.14"
