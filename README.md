@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@esm/index.mjs';
+import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@v0.0.1-esm/index.mjs';
 ```
 
 <a name="main"></a>
@@ -158,7 +158,7 @@ A returned error object may have one of the following error codes:
 
 import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
 import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
-import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@esm/index.mjs';
+import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@v0.0.1-esm/index.mjs';
 
 var s1 = new MultiSlice( null, S(), -1 );
 var s2 = normalizeMultiSlice( s1, [ 5, 10, 7 ], false );
