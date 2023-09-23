@@ -1,4 +1,0 @@
-// Copyright (c) 2023 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import e from"https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs";import n from"https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-slice@v0.0.1-esm/index.mjs";function s(e,s,i){return null===e?new t(0,s,1):"number"==typeof e?e>=s?i?{code:"ERR_SLICE_OUT_OF_BOUNDS"}:new t(s,s,1):e<0&&(e=s+e)<0?i?{code:"ERR_SLICE_OUT_OF_BOUNDS"}:new t(0,0,1):new t(e,e+1,1):n(e,s,i)}function i(t,n,i){var r,l,d,o;for(r=t.data,l=[],o=0;o<r.length;o++){if(void 0!==(d=s(r[o],n[o],i)).code)return d;l.push(d)}return e.apply(null,l)}export{i as default};
-//# sourceMappingURL=index.mjs.map
