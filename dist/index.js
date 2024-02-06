@@ -1,7 +1,5 @@
-"use strict";var s=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var a=s(function(z,c){
-function q(){return{code:"ERR_SLICE_OUT_OF_BOUNDS"}}c.exports=q
-});var p=s(function(h,m){
-var w=require('@stdlib/slice-base-args2multislice/dist'),n=require('@stdlib/slice-ctor/dist'),O=require('@stdlib/slice-base-normalize-slice/dist'),d=a();function S(r,e,i){return r===null?new n(0,e,1):typeof r=="number"?r>=e?i?d():new n(e,e,1):r<0?(r=e+r,r<0?i?d():new n(0,0,1):new n(r,r+1,1)):new n(r,r+1,1):O(r,e,i)}function _(r,e,i){var o,f,u,t;for(o=r.data,f=[],t=0;t<o.length;t++){if(u=S(o[t],e[t],i),u.code!==void 0)return u;f.push(u)}return w(f)}m.exports=_
-});var g=p();module.exports=g;
+"use strict";var c=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var s=c(function(z,o){
+var l=require('@stdlib/slice-base-args2multislice/dist'),f=require('@stdlib/slice-ctor/dist'),v=require('@stdlib/slice-base-normalize-slice/dist'),m=require('@stdlib/slice-base-int2slice/dist');function q(e,r,t){return e===null?new f(0,r,1):typeof e=="number"?m(e,r,t):v(e,r,t)}function d(e,r,t){var n,u,a,i;for(n=e.data,u=[],i=0;i<n.length;i++){if(a=q(n[i],r[i],t),a.code!==void 0)return a;u.push(a)}return l(u)}o.exports=d
+});var p=s();module.exports=p;
 /** @license Apache-2.0 */
 //# sourceMappingURL=index.js.map
