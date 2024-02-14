@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/slice-base-normalize-multi-slice/tags). For example,
+
+```javascript
 import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@v0.2.0-deno/mod.js';
 ```
 
@@ -153,7 +158,7 @@ A returned error object may have one of the following error codes:
 ```javascript
 import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
 import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@deno/mod.js';
-import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@v0.2.0-deno/mod.js';
+import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@deno/mod.js';
 
 var s1 = new MultiSlice( null, S(), -1 );
 var s2 = normalizeMultiSlice( s1, [ 5, 10, 7 ], false );
