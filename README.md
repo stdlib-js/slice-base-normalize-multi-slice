@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/slice-base-normalize-multi-slice
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@esm/index.mjs';
+var normalizeMultiSlice = require( '@stdlib/slice-base-normalize-multi-slice' );
 ```
 
 <a name="main"></a>
@@ -64,8 +82,8 @@ Normalizes a [`MultiSlice`][@stdlib/slice/multi] object, where `shape` specifies
 <!-- eslint-disable stdlib/no-redeclare, no-global-assign -->
 
 ```javascript
-import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
-import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
+var Slice = require( '@stdlib/slice-ctor' );
+var MultiSlice = require( '@stdlib/slice-multi' );
 
 var shape = [ 10, 10, 10 ];
 
@@ -116,8 +134,8 @@ step = v.step;
 When `strict` is `true`, the function returns an error object if an input slice exceeds index bounds.
 
 ```javascript
-import Slice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
-import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
+var Slice = require( '@stdlib/slice-ctor' );
+var MultiSlice = require( '@stdlib/slice-multi' );
 
 var s1 = new MultiSlice( new Slice( -20, 20, 1 ) );
 var s2 = normalizeMultiSlice( s1, [ 10 ], true );
@@ -150,15 +168,10 @@ A returned error object may have one of the following error codes:
 
 <!-- eslint-disable new-cap -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
-import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
-import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@esm/index.mjs';
+```javascript
+var S = require( '@stdlib/slice-ctor' );
+var MultiSlice = require( '@stdlib/slice-multi' );
+var normalizeMultiSlice = require( '@stdlib/slice-base-normalize-multi-slice' );
 
 var s1 = new MultiSlice( null, S(), -1 );
 var s2 = normalizeMultiSlice( s1, [ 5, 10, 7 ], false );
@@ -179,10 +192,6 @@ console.log( '%s => %s', s1.toString(), s2.toString() );
 s1 = new MultiSlice( S( 1, 20, 2 ), S( null, null, -1 ) );
 s2 = normalizeMultiSlice( s1, [ 10, 10 ], false );
 console.log( '%s => %s', s1.toString(), s2.toString() );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -201,6 +210,12 @@ console.log( '%s => %s', s1.toString(), s2.toString() );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/slice-base/normalize-slice`][@stdlib/slice/base/normalize-slice]</span><span class="delimiter">: </span><span class="description">normalize a Slice object.</span>
+
 </section>
 
 <!-- /.related -->
@@ -214,7 +229,7 @@ console.log( '%s => %s', s1.toString(), s2.toString() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -231,7 +246,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -277,7 +292,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/slice-base-normalize-multi-slice/main/LICENSE
 
-[@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi/tree/esm
+[@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi
+
+<!-- <related-links> -->
+
+[@stdlib/slice/base/normalize-slice]: https://github.com/stdlib-js/slice-base-normalize-slice
+
+<!-- </related-links> -->
 
 </section>
 
