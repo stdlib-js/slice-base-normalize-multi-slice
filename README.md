@@ -210,6 +210,12 @@ console.log( '%s => %s', s1.toString(), s2.toString() );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/slice-base/normalize-slice`][@stdlib/slice/base/normalize-slice]</span><span class="delimiter">: </span><span class="description">normalize a Slice object.</span>
+
 </section>
 
 <!-- /.related -->
@@ -240,7 +246,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -287,6 +293,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/slice-base-normalize-multi-slice/main/LICENSE
 
 [@stdlib/slice/multi]: https://github.com/stdlib-js/slice-multi
+
+<!-- <related-links> -->
+
+[@stdlib/slice/base/normalize-slice]: https://github.com/stdlib-js/slice-base-normalize-slice
+
+<!-- </related-links> -->
 
 </section>
 
