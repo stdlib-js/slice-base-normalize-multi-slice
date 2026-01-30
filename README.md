@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@deno/mod.js';
+import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@v0.2.3-deno/mod.js';
 ```
 
 <a name="main"></a>
@@ -153,7 +153,7 @@ A returned error object may have one of the following error codes:
 ```javascript
 import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@deno/mod.js';
 import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@deno/mod.js';
-import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@deno/mod.js';
+import normalizeMultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-normalize-multi-slice@v0.2.3-deno/mod.js';
 
 var s1 = new MultiSlice( null, S(), -1 );
 var s2 = normalizeMultiSlice( s1, [ 5, 10, 7 ], false );
