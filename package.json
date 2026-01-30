@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/slice-base-normalize-multi-slice",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Normalize a MultiSlice object.",
   "license": "Apache-2.0",
   "author": {
@@ -80,7 +80,6 @@
     "reduced",
     "multiple"
   ],
-  "__stdlib__": {},
   "funding": {
     "type": "opencollective",
     "url": "https://opencollective.com/stdlib"
